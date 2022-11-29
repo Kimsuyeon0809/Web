@@ -1,0 +1,391 @@
+<html>
+	<head>
+		<!-- AOS 라이브러리 불러오기-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+	
+    <style>
+		/*@import url('https://fonts.googleapis.com/css?family=Corben:700');*/
+
+	@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+
+.circle {
+	z-index :1;
+	position : absolute;
+	top : 100px;
+	left : 36%;
+	background-color:#86efef;
+	width:600px;
+	height:600px;
+	border-radius:300px;
+	/* text-align:center; */
+	margin:0 auto;
+	font-size:12px;
+	vertical-align:middle;
+	line-height:150px;
+	/* https://webgradients.com/ 그라데이션 사이트*/
+	background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+.name {
+	font-family: 'Black Han Sans', cursive;
+	/* font: small-caps bold 24px/1 sans-serif; */
+	z-index :2;
+	position : absolute;
+	top : 310px;
+	left : 32%;
+	margin:0 auto;
+	font-size:120px;
+	color : white;
+	text-shadow: 3px 3px 5px #f68084, 5px 5px 10px #f1979a ;
+	/* vertical-align:middle;
+	line-height:150px; */
+
+}
+.profile {
+	font-family: 'Black Han Sans', cursive;
+	/* font: small-caps bold 24px/1 sans-serif; */
+	z-index :2;
+	position : absolute;
+	top : 1000px;
+	left : 15%;
+	margin:0 auto;
+	font-size:70px;
+	color : white;
+	
+	/* vertical-align:middle;
+	line-height:150px; */
+
+}
+.capacity1 {
+	font-family: 'Black Han Sans', cursive;
+	z-index :2;
+	position : absolute;
+	top : 1700px;
+	left : 15%;
+	margin:0 auto;
+	font-size:70px;
+	color : white;
+}
+.capacity2 {
+	font-family: 'Black Han Sans', cursive;
+	z-index :2;
+	position : absolute;
+	top : 2700px;
+	right : 15%;
+	margin:0 auto;
+	font-size:70px;
+	color : white;
+}
+.capacity3 {
+	font-family: 'Black Han Sans', cursive;
+	z-index :2;
+	position : absolute;
+	top : 3700px;
+	left : 15%;
+	margin:0 auto;
+	font-size:70px;
+	color : white;
+}
+.capacity4 {
+	font-family: 'Black Han Sans', cursive;
+	z-index :2;
+	position : absolute;
+	top : 4700px;
+	right : 15%;
+	margin:0 auto;
+	font-size:70px;
+	color : white;
+}
+.hobby1 {
+	font-family: 'Black Han Sans', cursive;
+	z-index :2;
+	position : absolute;
+	top : 5700px;
+	left : 15%;
+	margin:0 auto;
+	font-size:70px;
+	color : white;
+}
+.hobby2 {
+	font-family: 'Black Han Sans', cursive;
+	z-index :2;
+	position : absolute;
+	top : 6700px;
+	right : 15%;
+	margin:0 auto;
+	font-size:70px;
+	color : white;
+}
+.hero {
+	z-index : -1;
+	background-image: radial-gradient(50% 176%, #000000 80%, #1c1d1d 100%); /*원형 그라데이션*/
+	min-height: 30rem; /*최소 높이*/
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.snow {
+	z-index : -1;
+	/* position: absolute; 배경*/
+	min-width: 100vw;
+	min-height: 100vh;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.snow .svg {
+	z-index : -1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#snow-top-layer {
+	z-index : -1;
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 5s infinite linear;
+}
+
+#snow-bottom-layer {
+	z-index : -1;
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 10s infinite linear;
+}
+a:link{
+	text-decoration: none; 
+	color : white;
+}
+a:visited{
+	text-decoration: none; 
+	color : white;
+}
+a:hover{
+	text-decoration: underline; 
+	color : white;
+}
+@keyframes fall {
+	
+	100% {
+		transform: translateY(0);
+	}
+	
+}
+    </style>
+	<script>
+		
+	</script>
+</head>
+    <body>
+<div class = "circle"></div>
+<span class ="name" data-aos="fade-up" data-aos-duration="2000" data-aos-once = "false"  ><i>Kimsuyeon</i></span>
+<!-- data-aos-* 속성을 태그에다가 써주면 알아서 동작되게 된다 -->
+<div data-aos="fade-right" 
+	 data-aos-offset="1200" 
+	 data-aos-easing="ease-out-cubic"
+	 data-aos-duration="2100" 
+	 data-aos-once = "false" 
+	 >
+	 <div class ="profile">
+		<div style="color : white; text-shadow: 3px 3px 5px #f68084, 5px 5px 10px #f1979a">Profile</div>
+		<img src="project_img/mimoticon.png" width="300px" style="float:left;">
+		<span style="float:left; margin-left:70px; font-size:30px;">
+			<br>
+			name&nbsp; : &nbsp;Kimsuyeon <br> 
+			date of birth&nbsp; : &nbsp;08/09/2002 <br>
+			e-mail&nbsp; : &nbsp;suyean4504@gmail.com<br>
+			Github&nbsp; : &nbsp;<a href="https://github.com/Kimsuyeon0809" target="_balnk">https://github.com/Kimsuyeon0809</a><br>
+			#BigData&nbsp;&nbsp;#DeepLearning&nbsp;&nbsp;#cooking&nbsp;&nbsp;
+		</span>
+	</div>
+</div>
+<div data-aos="fade-right" 
+	 data-aos-offset="2000" 
+	 data-aos-easing="ease-out-cubic"
+	 data-aos-duration="2100" 
+	 data-aos-once = "false" 
+	 >
+	 <div class ="capacity1">
+		<div style="color : white; text-shadow: 3px 3px 5px #f68084, 5px 5px 10px #f1979a;">Study</div>
+            <img src="project_img/happy.png" width="70px" style="float:left;">
+            <span style="float:left; margin-left:15px; font-size:40px;">
+                Emotion-Detection
+            </span>
+            <br>
+            <img src="project_img/emotion.png" width="450px;" style="float:left;">
+            <span style="font-size : 40px; float:left; ">
+                &nbsp; explane<br>
+				<a href="https://github.com/Kimsuyeon0809/Emotion-Detection" target="_balnk">&nbsp;&nbsp;Github</a><br>
+            </span><br>
+
+	</div>
+</div>
+<div data-aos="fade-left" 
+	 data-aos-offset="3000" 
+	 data-aos-easing="ease-out-cubic"
+	 data-aos-duration="2100" 
+	 data-aos-once = "false" 
+	 >
+	 <div class ="capacity2">
+            <span style="float:right; margin-right:20px; font-size:40px;">
+                전자시계
+            </span>
+            <br>
+            <img src="project_img/emotion.png" width="400px;" style="float:right;"alt="전자시계 사진">
+            <span style="font-size : 40px; float:right; ">
+                전자시계 설명&nbsp;
+            </span><br>
+	</div>
+</div>
+<div data-aos="fade-right" 
+	 data-aos-offset="4000" 
+	 data-aos-easing="ease-out-cubic"
+	 data-aos-duration="2100" 
+	 data-aos-once = "false" 
+	 >
+	 <div class ="capacity3">
+		<div style="color : white; text-shadow: 3px 3px 5px #f68084, 5px 5px 10px #f1979a;">Project</div>
+            <img src="project_img/happy.png" width="70px" style="float:left;">
+            <span style="float:left; margin-left:15px; font-size:40px;">
+                Emotion-Detection
+            </span>
+            <br>
+            <img src="project_img/emotion.png" width="450px;" style="float:left;">
+            <span style="font-size : 40px; float:left; ">
+                &nbsp; explane<br>
+				<a href="https://github.com/Kimsuyeon0809/Emotion-Detection" target="_balnk">&nbsp;&nbsp;Github</a><br>
+            </span><br>
+
+	</div>
+</div>
+<div data-aos="fade-left" 
+	 data-aos-offset="5000" 
+	 data-aos-easing="ease-out-cubic"
+	 data-aos-duration="2100" 
+	 data-aos-once = "false" 
+	 >
+	 <div class ="capacity4">
+            <span style="float:right; margin-right:20px; font-size:40px;">
+                전자시계
+            </span>
+            <br>
+            <img src="project_img/emotion.png" width="400px;" style="float:right;"alt="전자시계 사진">
+            <span style="font-size : 40px; float:right; ">
+                전자시계 설명&nbsp;
+            </span><br>
+	</div>
+</div>
+<div data-aos="fade-left" 
+	 data-aos-offset="6000" 
+	 data-aos-easing="ease-out-cubic"
+	 data-aos-duration="500" 
+	 data-aos-once = "false" 
+	 >
+	 <div class ="hobby1">
+		<div style="color : white; text-shadow: 3px 3px 5px #f68084, 5px 5px 10px #f1979a">Hobby - Cooking</div><br>
+
+            <br>
+			<span class="changeImg" style=" margin-left:140px; font-size:40px;">음식이름1 </span>
+			<span class="changeImg" style=" margin-left:240px; font-size:40px;">음식이름2 </span>
+			<span class="changeImg" style=" margin-left:240px; font-size:40px;">음식이름3 </span><br>
+
+            <img src="project_img/emotion.png" width="400px;" style="float:left; margin-left:10px;" alt="음식사진1">
+			<img src="project_img/emotion.png" width="400px;" style="float:left; margin-left:20px;"alt="음식사진2">
+			<img src="project_img/emotion.png" width="400px;" style="float:left; margin-left:20px;" alt="음식사진3">
+
+	</div>
+</div>
+
+<!-- AOS 스크립트 시작 -->
+<script> 
+	AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+</script>
+
+
+
+<div class="hero">
+
+    <div class="snow">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 5000" preserveAspectRatio="xMidYMax slice">
+		    <g fill="#FFF" fill-opacity=".15" transform="translate(55 42)">
+			   <g id="snow-bottom-layer">
+				  <ellipse cx="6" cy="1009.5" rx="6" ry="5.5"/>
+				  <ellipse cx="138" cy="1110.5" rx="6" ry="5.5"/>
+				  <ellipse cx="398" cy="1055.5" rx="6" ry="5.5"/>
+				  <ellipse cx="719" cy="1284.5" rx="6" ry="5.5"/>
+				  <ellipse cx="760" cy="1155.5" rx="6" ry="5.5"/>
+				  <ellipse cx="635" cy="1459.5" rx="6" ry="5.5"/>
+				  <ellipse cx="478" cy="1335.5" rx="6" ry="5.5"/>
+				  <ellipse cx="322" cy="1414.5" rx="6" ry="5.5"/>
+				  <ellipse cx="247" cy="1234.5" rx="6" ry="5.5"/>
+				  <ellipse cx="154" cy="1425.5" rx="6" ry="5.5"/>
+				  <ellipse cx="731" cy="773.5" rx="6" ry="5.5"/>
+				  <ellipse cx="599" cy="874.5" rx="6" ry="5.5"/>
+				  <ellipse cx="339" cy="819.5" rx="6" ry="5.5"/>
+				  <ellipse cx="239" cy="1004.5" rx="6" ry="5.5"/>
+				  <ellipse cx="113" cy="863.5" rx="6" ry="5.5"/>
+				  <ellipse cx="102" cy="1223.5" rx="6" ry="5.5"/>
+				  <ellipse cx="395" cy="1155.5" rx="6" ry="5.5"/>
+				  <ellipse cx="826" cy="943.5" rx="6" ry="5.5"/>
+				  <ellipse cx="626" cy="1054.5" rx="6" ry="5.5"/>
+				  <ellipse cx="887" cy="1366.5" rx="6" ry="5.5"/>
+				  <ellipse cx="6" cy="241.5" rx="6" ry="5.5"/>
+				  <ellipse cx="138" cy="342.5" rx="6" ry="5.5"/>
+				  <ellipse cx="398" cy="287.5" rx="6" ry="5.5"/>
+				  <ellipse cx="719" cy="516.5" rx="6" ry="5.5"/>
+				  <ellipse cx="760" cy="387.5" rx="6" ry="5.5"/>
+				  <ellipse cx="635" cy="691.5" rx="6" ry="5.5"/>
+				  <ellipse cx="478" cy="567.5" rx="6" ry="5.5"/>
+				  <ellipse cx="322" cy="646.5" rx="6" ry="5.5"/>
+				  <ellipse cx="247" cy="466.5" rx="6" ry="5.5"/>
+				  <ellipse cx="154" cy="657.5" rx="6" ry="5.5"/>
+				  <ellipse cx="731" cy="5.5" rx="6" ry="5.5"/>
+				  <ellipse cx="599" cy="106.5" rx="6" ry="5.5"/>
+				  <ellipse cx="339" cy="51.5" rx="6" ry="5.5"/>
+				  <ellipse cx="239" cy="236.5" rx="6" ry="5.5"/>
+				  <ellipse cx="113" cy="95.5" rx="6" ry="5.5"/>
+				  <ellipse cx="102" cy="455.5" rx="6" ry="5.5"/>
+				  <ellipse cx="395" cy="387.5" rx="6" ry="5.5"/>
+				  <ellipse cx="826" cy="175.5" rx="6" ry="5.5"/>
+				  <ellipse cx="626" cy="286.5" rx="6" ry="5.5"/>
+				  <ellipse cx="887" cy="598.5" rx="6" ry="5.5"/>
+			   </g>
+		    </g>
+		    <g fill="#FFF" fill-opacity=".3" transform="translate(65 63)">
+			   <g id="snow-top-layer">
+				  <circle cx="8" cy="776" r="8"/>
+				  <circle cx="189" cy="925" r="8"/>
+				  <circle cx="548" cy="844" r="8"/>
+				  <circle cx="685" cy="1115" r="8"/>
+				  <circle cx="858" cy="909" r="8"/>
+				  <circle cx="874" cy="1438" r="8" transform="rotate(180 874 1438)"/>
+				  <circle cx="657" cy="1256" r="8" transform="rotate(180 657 1256)"/>
+				  <circle cx="443" cy="1372" r="8" transform="rotate(180 443 1372)"/>
+				  <circle cx="339" cy="1107" r="8" transform="rotate(180 339 1107)"/>
+				  <circle cx="24" cy="1305" r="8" transform="rotate(180 24 1305)"/>
+				  <circle cx="8" cy="8" r="8"/>
+				  <circle cx="189" cy="157" r="8"/>
+				  <circle cx="548" cy="76" r="8"/>
+				  <circle cx="685" cy="347" r="8"/>
+				  <circle cx="858" cy="141" r="8"/>
+				  <circle cx="874" cy="670" r="8" transform="rotate(180 874 670)"/>
+				  <circle cx="657" cy="488" r="8" transform="rotate(180 657 488)"/>
+				  <circle cx="443" cy="604" r="8" transform="rotate(180 443 604)"/>
+				  <circle cx="339" cy="339" r="8" transform="rotate(180 339 339)"/>
+				  <circle cx="24" cy="537" r="8" transform="rotate(180 24 537)"/>
+			   </g>
+		    </g>
+		</svg>
+    </div>
+	
+
+</div>
+</body>
+</html>
