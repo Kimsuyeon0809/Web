@@ -1,0 +1,258 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> <!--AOS(fade)-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <!--제이쿼리-->
+        <title>Kimsuyeon</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap'); /*font*/
+            body{
+                background-color: #F5F5DC;
+                font-family: 'Black Han Sans', cursive;
+            }
+            #circle {
+                z-index :1;
+                position : absolute;
+                top : 100px;
+                left : 36%;
+                background-color:#F5F5DC;
+                width:600px;
+                height:600px;
+                border-radius:300px;
+                margin:0 auto;
+                vertical-align:middle;
+                line-height:150px;
+                /* https://webgradients.com/ 그라데이션 사이트*/
+                background-image: linear-gradient(120deg, #EED799 0%, #f68084 100%);
+            }
+            #name {
+                z-index :4;
+                position : absolute;
+                top : 310px;
+                left : 32%;
+                margin:0 auto;
+                font-size:120px;
+                color : white;
+                /* text-shadow: 3px 3px 5px #B39283, 5px 5px 10px #B39283 ; */
+                text-shadow : -2px 0 #B39283, 0 2px #B39283, 2px 0 #B39283, 0 -2px #B39283,
+                    3px 3px 5px #B39283, 5px 5px 10px #EED799; 
+
+            
+            }
+            .hero {
+                z-index : -1;
+                /* background-image: radial-gradient(50% 176%, #000000 80%, #1c1d1d 100%); 원형 그라데이션 */
+                min-height: 30rem; /*최소 높이*/
+                position: relative;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+            }
+
+            .snow {
+                z-index : -1;
+                /* position: absolute; 배경*/
+                min-width: 100vw;
+                min-height: 100vh;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+            }
+
+            .snow .svg {
+                z-index : -1;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            #snow-top-layer {
+                z-index : -1;
+                will-change: transform;
+                transform: translateY(-768px);
+                animation: fall 5s infinite linear;
+            }
+
+            #snow-bottom-layer {
+                z-index : -1;
+                will-change: transform;
+                transform: translateY(-768px);
+                animation: fall 10s infinite linear;
+            }
+            @keyframes fall { /*눈*/
+                
+                100% {
+                    transform: translateY(0);
+                }
+            }
+            .title {
+                /*z-index :4; /*공통 지정 부분*/
+                font-size:100px;
+                color : #EED799;
+                text-shadow : -2px 0 #B39283, 0 2px #B39283, 2px 0 #B39283, 0 -2px #B39283,
+                    3px 3px 5px #B39283, 5px 5px 10px #EED799; 
+
+                position : absolute; /*각각 지정하는 부분*/
+                top : 1000px;
+                left : 33%;
+                margin:0 auto;  
+                /* vertical-align:middle;
+                line-height:150px; */
+            }
+
+            .titleBox {
+               /* z-index: 5;*/
+                width : 100%;
+                height : 400px;
+                background-color: rgba(255, 255, 255, 0.7);
+
+                position : absolute;
+                top : 950px; /*박스가 텍스트보다 50위에*/
+            }
+            .titleBox:hover {
+                background-color: white;
+               
+            }
+        </style>
+    </head>
+    <body>
+        <div id="circle"></div>
+        <span id ="name" data-aos="fade-up" data-aos-duration="2000" data-aos-once = "false"  ><i>Kimsuyeon</i></span>
+    <a href="profile.html">
+        <div data-aos="fade-right" 
+            data-aos-offset="1200" 
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2100" 
+            data-aos-once = "false" 
+            >
+            <div class="titleBox"></div>
+            <div>
+                <div class ="title">
+                    <img src="project_img/mimoticon.png" width="300px" style="float:left;">
+                    <div style="float:left; margin-top:100px;">Profile</div>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a href="capacity.html">
+        <div data-aos="fade-right" 
+            data-aos-offset="1800" 
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2100" 
+            data-aos-once = "false"  
+            >
+            <div class="titleBox" style="position : absolute; top : 1600px;"></div> <!--이전+600-->
+            <div>
+                <div class ="title" style="position : absolute; top : 1650px; left : 37%;"> <!--박스+50-->
+                   <!--<img src="project_img/github.png" width="300px" style="float:left;">-->
+                    <div style="float:left; margin-top:100px;">Capacity</div>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a href="hobby.html">
+        <div data-aos="fade-right" 
+            data-aos-offset="2400" 
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2100" 
+            data-aos-once = "false"  
+            > <!--offset:밑에 top+200px-->
+            <div class="titleBox" style="position : absolute; top : 2200px;"></div>
+            <div>
+                <div class ="title" style="position : absolute; top : 2250px; left : 40%;">
+                   <!--<img src="project_img/github.png" width="300px" style="float:left;">-->
+                    <div style="float:left; margin-top:100px;">Hobby</div>
+                </div>
+            </div>
+        </div>
+    </a>
+
+
+
+
+
+
+        <div class="hero">
+            <div class="snow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1700" preserveAspectRatio="xMidYMax slice">
+                    <g fill="#FFF" fill-opacity=".15" transform="translate(55 42)">
+                       <g id="snow-bottom-layer">
+                          <ellipse cx="6" cy="1009.5" rx="6" ry="5.5"/>
+                          <ellipse cx="138" cy="1110.5" rx="6" ry="5.5"/>
+                          <ellipse cx="398" cy="1055.5" rx="6" ry="5.5"/>
+                          <ellipse cx="719" cy="1284.5" rx="6" ry="5.5"/>
+                          <ellipse cx="760" cy="1155.5" rx="6" ry="5.5"/>
+                          <ellipse cx="635" cy="1459.5" rx="6" ry="5.5"/>
+                          <ellipse cx="478" cy="1335.5" rx="6" ry="5.5"/>
+                          <ellipse cx="322" cy="1414.5" rx="6" ry="5.5"/>
+                          <ellipse cx="247" cy="1234.5" rx="6" ry="5.5"/>
+                          <ellipse cx="154" cy="1425.5" rx="6" ry="5.5"/>
+                          <ellipse cx="731" cy="773.5" rx="6" ry="5.5"/>
+                          <ellipse cx="599" cy="874.5" rx="6" ry="5.5"/>
+                          <ellipse cx="339" cy="819.5" rx="6" ry="5.5"/>
+                          <ellipse cx="239" cy="1004.5" rx="6" ry="5.5"/>
+                          <ellipse cx="113" cy="863.5" rx="6" ry="5.5"/>
+                          <ellipse cx="102" cy="1223.5" rx="6" ry="5.5"/>
+                          <ellipse cx="395" cy="1155.5" rx="6" ry="5.5"/>
+                          <ellipse cx="826" cy="943.5" rx="6" ry="5.5"/>
+                          <ellipse cx="626" cy="1054.5" rx="6" ry="5.5"/>
+                          <ellipse cx="887" cy="1366.5" rx="6" ry="5.5"/>
+                          <ellipse cx="6" cy="241.5" rx="6" ry="5.5"/>
+                          <ellipse cx="138" cy="342.5" rx="6" ry="5.5"/>
+                          <ellipse cx="398" cy="287.5" rx="6" ry="5.5"/>
+                          <ellipse cx="719" cy="516.5" rx="6" ry="5.5"/>
+                          <ellipse cx="760" cy="387.5" rx="6" ry="5.5"/>
+                          <ellipse cx="635" cy="691.5" rx="6" ry="5.5"/>
+                          <ellipse cx="478" cy="567.5" rx="6" ry="5.5"/>
+                          <ellipse cx="322" cy="646.5" rx="6" ry="5.5"/>
+                          <ellipse cx="247" cy="466.5" rx="6" ry="5.5"/>
+                          <ellipse cx="154" cy="657.5" rx="6" ry="5.5"/>
+                          <ellipse cx="731" cy="5.5" rx="6" ry="5.5"/>
+                          <ellipse cx="599" cy="106.5" rx="6" ry="5.5"/>
+                          <ellipse cx="339" cy="51.5" rx="6" ry="5.5"/>
+                          <ellipse cx="239" cy="236.5" rx="6" ry="5.5"/>
+                          <ellipse cx="113" cy="95.5" rx="6" ry="5.5"/>
+                          <ellipse cx="102" cy="455.5" rx="6" ry="5.5"/>
+                          <ellipse cx="395" cy="387.5" rx="6" ry="5.5"/>
+                          <ellipse cx="826" cy="175.5" rx="6" ry="5.5"/>
+                          <ellipse cx="626" cy="286.5" rx="6" ry="5.5"/>
+                          <ellipse cx="887" cy="598.5" rx="6" ry="5.5"/>
+                       </g>
+                    </g>
+                    <g fill="#FFF" fill-opacity=".7" transform="translate(65 63)">
+                       <g id="snow-top-layer">
+                          <circle cx="8" cy="776" r="8"/>
+                          <circle cx="189" cy="925" r="8"/>
+                          <circle cx="548" cy="844" r="8"/>
+                          <circle cx="685" cy="1115" r="8"/>
+                          <circle cx="858" cy="909" r="8"/>
+                          <circle cx="874" cy="1438" r="8" transform="rotate(180 874 1438)"/>
+                          <circle cx="657" cy="1256" r="8" transform="rotate(180 657 1256)"/>
+                          <circle cx="443" cy="1372" r="8" transform="rotate(180 443 1372)"/>
+                          <circle cx="339" cy="1107" r="8" transform="rotate(180 339 1107)"/>
+                          <circle cx="24" cy="1305" r="8" transform="rotate(180 24 1305)"/>
+                          <circle cx="8" cy="8" r="8"/>
+                          <circle cx="189" cy="157" r="8"/>
+                          <circle cx="548" cy="76" r="8"/>
+                          <circle cx="685" cy="347" r="8"/>
+                          <circle cx="858" cy="141" r="8"/>
+                          <circle cx="874" cy="670" r="8" transform="rotate(180 874 670)"/>
+                          <circle cx="657" cy="488" r="8" transform="rotate(180 657 488)"/>
+                          <circle cx="443" cy="604" r="8" transform="rotate(180 443 604)"/>
+                          <circle cx="339" cy="339" r="8" transform="rotate(180 339 339)"/>
+                          <circle cx="24" cy="537" r="8" transform="rotate(180 24 537)"/>
+                       </g>
+                    </g>
+                </svg>
+            </div>
+            
+        
+        </div>
+        <script> 
+            AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+        </script>  
+    </body>
+</html>
