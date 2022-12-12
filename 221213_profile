@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+        <title>profile</title>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap'); 
+            body{
+                z-index: -1;
+                font-family: 'Black Han Sans', sans-serif;
+                font-family: 'Noto Sans KR', sans-serif;
+                background-color: #F5F5DC;
+            }
+            #back{
+                z-index: -1;
+                background-color: #EED799;
+                width : 30%;
+                height : 3000px;
+            }
+            #imgBox{
+                z-index: 1;
+                background-color: rgba(255, 255, 255, 0.7);
+                width : 450px;
+                height : 600px;
+                top : 200px;
+                left : 13%;
+                position : fixed;
+                box-shadow: 10px 5px 10px #EED799;
+
+            }
+            img {
+                z-index: 1;
+                position : fixed;
+                top : 200px;
+                left : 14%;
+            }
+            span{
+                z-index: 1;
+            }
+            #text{
+                z-index: 1 ;
+                position : absolute;
+                top : 220px;
+                left : 40%;
+                margin:0 auto;  
+                font-size : 40px;
+                color : black;  
+            }   
+            hr {
+                border-top: 3px solid #EED799;
+            }
+        </style> 
+    </head>
+    <body>
+        <div id="back"> </div>
+        <div id="imgBox">
+            <img src="project_img/mimoticon.png" >
+            <a href="https://github.com/Kimsuyeon0809?tab=repositories" target="_blank"><img src="project_img/instagram.png" style="top:660px; left : 16%;" width="80px"></a>
+            <a href="https://github.com/Kimsuyeon0809?tab=repositories" target="_blank"><img src="project_img/facebook.png" style="top:655px; left : 22.5%;" width="90px"></a>
+            <a href="https://github.com/Kimsuyeon0809?tab=repositories" target="_blank"><img src="project_img/github.png" style="top:645px; left : 29%;" width="110px"></a>
+        </div>
+        <div id="text">
+            <hr><b style="font-size : 70px;">김수연</b>
+            <table>
+                <tr><td><b>전화번호</b></td> <td> &nbsp;010-0000-0000</td><br></tr>
+                <tr><td><b>이메일</b></td> <td> &nbsp;suyean4504@gmail.com</td><br></tr>
+                <tr><td><b>생년월일</b></td> <td> &nbsp;00/00/2002</span></td><br></tr>
+            </table>
+            <span>#BigData &nbsp; #DeepLearning &nbsp;  #cooking</span><br>
+            <hr>
+
+
+        </div>
+
+        <div id="text" style="top : 1100px;">
+            <hr><b style="font-size : 70px;">학력</b>
+            <table>
+            <tr><td><b>00중학교</b></td> <td> &nbsp;<small>20XX - 20XX</small></td><br></tr>
+            <tr><td><b>00고등학교</b></td> <td> &nbsp;<small>20XX - 20XX</small></td><br></tr>
+            <tr><td><b>00대학교</b></td> <td> &nbsp;<small>20XX -</small></td><br></tr>
+            </table>
+            <hr>
+        </div>
+        
+        <div id="text" style="top : 2300px;">
+            <hr><b style="font-size : 70px;">소개</b><br><br>
+                나에 대한 소개<br>
+                나에 대한 소개<br>
+            <hr>
+        </div>
+    </body>
+</html>
+
