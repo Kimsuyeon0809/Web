@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> <!--AOS(fade)-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <!--제이쿼리-->
+        <title>profile</title>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap'); /*font-title*/
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap'); 
+            body{
+                z-index: -1;
+                font-family: 'Black Han Sans', sans-serif;
+                font-family: 'Noto Sans KR', sans-serif;
+                background-color: #F5F5DC;
+            }
+            #title{
+                font-family: 'Black Han Sans', cursive;
+                font-size:100px;
+                color : #EED799;
+                text-shadow : -2px 0 #B39283, 0 2px #B39283, 2px 0 #B39283, 0 -2px #B39283,
+                    3px 3px 5px #B39283, 5px 5px 10px #EED799; 
+
+                position : absolute; /*각각 지정하는 부분*/
+                top : 50px;
+                left : 30%;
+                margin:0 auto; 
+            }
+            #imgBox{
+                z-index: 1;
+                background-image: url('project_img/월남쌈1.jpg');
+                width : 450px;
+                height : 600px;
+                top : 200px;
+                left : 20%;
+                position : absolute;
+                box-shadow: 10px 5px 10px #EED799;
+                border-radius: 10%;
+
+            }
+            #BoxOnImg{
+                z-index: 2;
+                background-color : rgba(255, 255, 255, 0.0);
+                width : 450px;
+                height : 600px;
+                top : 200px;
+                left : 20%;
+                position : absolute;
+                border-radius: 10%;
+
+            }
+            #BoxOnImg:hover{
+                background-color : rgba(255, 255, 255, 0.2);
+            }
+            img {
+                width : 450px;
+                height : 600px;
+            }
+            span{
+                z-index: 1;
+            }
+            #text{
+                z-index: 1 ;
+                position : absolute; /*각각 지정하는 부분*/
+                top : 220px;
+                left : 60%;
+                margin:0 auto;  
+                font-size : 70px;
+                color : black;
+               
+            }  
+            #circle{
+                z-index : -1;
+                position : fixed;
+                top : 30px;
+                left :140px;
+
+                width : 900px;
+                height : 900px;
+                border : 5px solid #EED799;
+                background-color : white;
+                border-radius : 450px 450px 450px 450px;
+            }
+            #circle2{
+                z-index : -1;
+                position : fixed;
+                top : 120px;
+                left :240px;
+
+                width : 700px;
+                height : 700px;
+                border : 2px solid #EED799;
+                border-radius : 400px 400px 400px 400px;
+            }
+            #fade{
+                z-index : -1;
+                position : fixed;
+                top : 30px;
+                left :10px;
+            }
+            #img1{
+                border-radius: 10%;
+            }
+            hr {
+                /* border-top: 3px solid #B39283; */
+                border-top: 3px solid #EED799;
+
+            }
+        </style> 
+        <script>
+            
+            var files = ["project_img/월남쌈1.jpg", 
+                        "project_img/월남쌈2.jpg",
+                        "project_img/월남쌈3.jpg"];
+            var exfiles = ["<b>요리이름1</b><br>요리1 설명", 
+                        "<b>요리이름2</b><br>요리2 설명",
+                        "<b>요리이름3</b><br>요리3 설명"];
+            var imgs = new Array();
+            var next = 1;
+            for(var i=0; i<files.length; i++) {
+                imgs[i] = new Image(); // 이미지 객체 생성
+                imgs[i].src = files[i]; // 이미지 로딩
+            }
+            function changeFood(img) {
+                img.src = imgs[next].src; // 이미지 변경
+                document.getElementById("text").innerHTML = exfiles[next];
+                next++; // 다음 이미지
+                next %= imgs.length; // 개수를 넘으면 처음으로
+            }
+        </script>
+    </head>
+    <body>
+        <span id="title">Hobby : Cooking </span>
+        <div id="fade" data-aos="fade-right" data-aos-duration="2000" data-aos-once = "true" >
+            <div id="circle"></div>
+            <div id="circle2"></div>
+        </div>
+        
+            <div id="imgBox" >
+                <img id="img1" src="project_img/월남쌈1.jpg" >
+            </div>
+            <div id="BoxOnImg" onclick="changeFood(img1)">
+        </div>
+        
+        <span  id="text"><b>요리이름1</b> <br>요리1 설명</span >
+
+        <script> 
+            AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+        </script>  
+    </body>
+</html>
