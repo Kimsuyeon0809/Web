@@ -35,8 +35,8 @@ Visual Studio Code (html, jQuery)
 <img width="49%" src="https://github.com/Kimsuyeon0809/Web/assets/100747267/3725a663-851a-44ee-b86e-48f0989a4281.png"/>
 <img width="49%" src="https://github.com/Kimsuyeon0809/Web/assets/100747267/3604fd0b-c0d8-4afc-9374-d04de7d135a4.png"/>
 </br>
-* 두 가지의 전공 관련 지식과 두 가지의 프로젝트를 클릭하며 넘겨볼 수 있는 구조
-* 사진의 투명도를 통해 클릭 유도, 사진 클릭하면 다음 내용으로 넘어감
+- 두 가지의 전공 관련 지식과 두 가지의 프로젝트를 클릭하며 넘겨볼 수 있는 구조
+- 사진의 투명도를 통해 클릭 유도, 사진 클릭하면 다음 내용으로 넘어감
 
 
 #### 4. hobby
