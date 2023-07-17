@@ -14,6 +14,7 @@ Visual Studio Code (html, jQuery)
 <img width="49%" src="https://github.com/Kimsuyeon0809/Web/assets/100747267/f9b9c260-e73f-47ab-95ae-3231b8df4ee3.png"/>
 <img width="49%" src="https://github.com/Kimsuyeon0809/Web/assets/100747267/9348cef9-7f2c-4ae7-b192-eb689c59a988.png"/>
 </br>
+
 * Home에서 스크롤하여 내리면 프로필, 역량, 취미가 나옴
 * 마우스를 올리면 배경이 흰색으로 변해 클릭 유도
 * 각 부분을 누르면 해당 내용의 페이지로 넘어감
@@ -26,8 +27,9 @@ Visual Studio Code (html, jQuery)
 </br>
 <img width="49%" src="https://github.com/Kimsuyeon0809/Web/assets/100747267/b1bc86e2-6b32-458d-a561-b26db5ea6f02.png"/>
 </br>
-*프로필을 누르면 간단한 정보, 학력, 소개가 나옴
-*사진과 SNS 링크는 고정, 나머지 소개는 스크롤하여 볼 수 있음
+
+- 프로필을 누르면 간단한 정보, 학력, 소개가 나옴
+- 사진과 SNS 링크는 고정, 나머지 소개는 스크롤하여 볼 수 있음
 
 #### 3. capacity
 <img width="49%" src="https://github.com/Kimsuyeon0809/Web/assets/100747267/3725a663-851a-44ee-b86e-48f0989a4281.png"/>
