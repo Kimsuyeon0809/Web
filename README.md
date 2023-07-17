@@ -35,17 +35,17 @@ Visual Studio Code (html, jQuery)
 <img width="49%" src="https://github.com/Kimsuyeon0809/Web/assets/100747267/3725a663-851a-44ee-b86e-48f0989a4281.png"/>
 <img width="49%" src="https://github.com/Kimsuyeon0809/Web/assets/100747267/3604fd0b-c0d8-4afc-9374-d04de7d135a4.png"/>
 </br>
-* 두 가지의 전공 관련 지식과 두 가지의 프로젝트를 클릭하며 넘겨볼 수 있는 구조
-* 사진의 투명도를 통해 클릭 유도, 사진 클릭하면 다음 내용으로 넘어감
+* 두 가지의 전공 관련 지식과 두 가지의 프로젝트를 클릭하며 넘겨볼 수 있는 구조</br>
+* 사진의 투명도를 통해 클릭 유도, 사진 클릭하면 다음 내용으로 넘어감</br>
 
 
 #### 4. hobby
 <img width="49%" src="https://github.com/Kimsuyeon0809/Web/assets/100747267/644921f9-6b1f-44a0-8520-fcedd9b51f8b.png"/>
 <img width="49%" src="https://github.com/Kimsuyeon0809/Web/assets/100747267/c1b73adc-7440-4283-96f6-3802f2a4059d.png"/>
 </br>
-* 취미인 요리에 대해 알리는 페이지. 사진을 누르면 내가 만든 요리들이 나옴
-* 사진 위에는 요리의 이름
-* 그릇 모양 배경이 슬라이드 되며 나옴
+* 취미인 요리에 대해 알리는 페이지. 사진을 누르면 내가 만든 요리들이 나옴</br>
+* 사진 위에는 요리의 이름</br>
+* 그릇 모양 배경이 슬라이드 되며 나옴</br>
 
 
 ### 개선할 사항
