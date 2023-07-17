@@ -22,9 +22,8 @@ Visual Studio Code (html, jQuery)
 
 
 #### 2. profile
-<img width="49%" src="https://github.com/Kimsuyeon0809/Web/assets/100747267/8f16febe-76e6-416a-8754-1c58eac799e3.png"/>
-<img width="49%" src="https://github.com/Kimsuyeon0809/Web/assets/100747267/33f51d9c-b413-4f5e-9b2f-b7218f34c0ae.png"/>
-</br>
+<img width="49%" src="https://github.com/Kimsuyeon0809/Web/assets/100747267/7c65661d-131b-4ac2-9fa2-32697dfd1dad.png"/>
+<img width="49%" src="https://github.com/Kimsuyeon0809/Web/assets/100747267/ac187032-15b3-4920-8230-080643d3ea51.png"/>
 <img width="49%" src="https://github.com/Kimsuyeon0809/Web/assets/100747267/b1bc86e2-6b32-458d-a561-b26db5ea6f02.png"/>
 </br>
 
