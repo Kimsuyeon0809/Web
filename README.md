@@ -6,3 +6,8 @@
 ### 개발 환경
 Visual Studio Code (html, jQuery)
 
+### 구성
+* home
+  <img width="50%" src="https://github.com/Kimsuyeon0809/Web/assets/100747267/67fbc142-15a2-47af-8e38-698f579a3f71.png"/>
+
+* profile
